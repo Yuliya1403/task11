@@ -4,23 +4,19 @@ import java.sql.SQLOutput;
 import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
-        Scanner input = new Scanner(System.in);
+      Scanner input = new Scanner(System.in);
         System.out.println("Ввести первое  число");
-        int type = input.nextInt();
-        String str = Integer.toString(type);
-        //System.out.println(str + 2); для проверки, что число преобразовалось
+        String type = input.nextLine();
         System.out.println("Ввести второе  число");
         int type2 = input.nextInt();
-        int resultInt = Math.max(type,  type2);
-        System.out.println("Большее число:" + resultInt);
-        int resultInt2 = Math.min(type, type2);
-        double str2 = Double.valueOf(resultInt2);
-        System.out.println("Меньшее число:" + str2);
 
+        int result1 = Math.max(Integer.parseInt(type),  type2);
+        double result2 = Math.min(Double.valueOf(type), type2);
 
-
-        }
+        System.out.println("Большее число:" + result1);
+        System.out.println("Меньшее число:" + result2);
     }
+}
 
 
 
